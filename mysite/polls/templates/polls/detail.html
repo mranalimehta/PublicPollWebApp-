@@ -1,3 +1,10 @@
+{% load staticfiles %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}" />
+
+<h2>General Polls of Public</h2>
+
+
 <h1>{{ question.question_text }} </h1>
 
 {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
